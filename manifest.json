@@ -1,0 +1,25 @@
+{
+	"name" : "SharePoint Helper Tool Demo",
+	"homepage_url": "https://www.linkedin.com/in/youssef-moumen-el-idrissi-0050b53b",
+	"version" : "1.0",
+	"manifest_version": 2,
+	"description" : "First demo plugin chrom for SharePoint",
+	"background": "background.html",
+	"icons": {
+        "16": "images/SP_icon_16.png",
+        "32": "images/SP_icon_32.png",
+        "48": "images/SP_icon_48.png",
+        "96": "images/SP_icon_96.png",
+        "128": "images/SP_icon_128.png"
+	},
+	"browser_action" : {
+		"default_icon": "images/SP_icon_96.png",
+		"default_popup" : "popup.html"
+	},
+	"permissions":  [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
